@@ -86,7 +86,7 @@ const guides: Guide[] = [
         "Adjustable wrench",
         "Flat + Phillips screwdrivers",
         "New washer set (assorted, ~₹100) or cartridge if it's a mixer tap",
-        " Cloth + old towel",
+        "Cloth + old towel",
         "White vinegar (for crust)",
       ],
       steps: [
