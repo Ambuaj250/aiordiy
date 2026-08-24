@@ -23,6 +23,12 @@ export default function Header() {
 
         <nav className="flex items-center gap-6">
           <Link
+            href="/guides"
+            className="text-sm text-white/60 hover:text-white transition-colors hidden sm:block"
+          >
+            Guides
+          </Link>
+          <Link
             href="/projects"
             className="text-sm text-white/60 hover:text-white transition-colors hidden sm:block"
           >

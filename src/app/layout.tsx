@@ -14,16 +14,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "aiordiy — AI Automation & Workflow Systems",
-  description: "Building AI agents, automation workflows, and productivity systems. Documenting the journey on X.",
+  title: "aiordiy — AI or DIY? Every task, two ways",
+  description:
+    "Practical guides that solve everyday tasks two ways: the AI way for speed, the DIY way for craft. Plus AI agents and automation systems, built in public.",
   icons: {
     icon: "/favicon.png",
     shortcut: "/favicon.png",
     apple: "/favicon.png",
   },
   openGraph: {
-    title: "aiordiy — AI Automation & Workflow Systems",
-    description: "Building AI agents, automation workflows, and productivity systems.",
+    title: "aiordiy — AI or DIY? Every task, two ways",
+    description:
+      "The AI way for speed. The DIY way for craft. Practical guides for home, work, money, and life.",
     type: "website",
   },
 };

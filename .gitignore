@@ -16,6 +16,13 @@
 # next.js
 /.next/
 /out/
+/dist/
+
+# local content drafts
+content-calendar.md
+x-growth-strategy.md
+launch-video.html
+x-banner*.jpg
 
 # production
 /build

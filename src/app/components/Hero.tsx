@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
-import { ArrowRight, Sparkles, X } from 'lucide-react';
+import { ArrowRight, Sparkles } from 'lucide-react';
 import dynamic from 'next/dynamic';
 
 const HeroCanvas = dynamic(() => import('./HeroCanvas'), {
@@ -10,7 +10,7 @@ const HeroCanvas = dynamic(() => import('./HeroCanvas'), {
   loading: () => null,
 });
 
-const ROTATING_WORDS = ['agents', 'workflows', 'systems'] as const;
+const ROTATING_WORDS = ['or DIY', 'way is faster', 'way is cheaper'] as const;
 
 function MagneticButton({
   children,
@@ -74,9 +74,9 @@ function KineticWord() {
 
   return (
     <span className="inline-grid align-baseline overflow-hidden leading-[0.95]">
-      <span className="sr-only">AI agents, workflows, and systems</span>
+      <span className="sr-only">AI or DIY</span>
       <span aria-hidden className="invisible col-start-1 row-start-1 whitespace-nowrap">
-        workflows
+        way is faster
       </span>
       <AnimatePresence mode="wait" initial={false}>
         <motion.span
@@ -117,16 +117,16 @@ export default function Hero() {
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full liquid-glass mb-8"
         >
           <Sparkles className="w-4 h-4 text-cyan-300" />
-          <span className="text-sm text-white/75">AI Automation & Workflow Systems</span>
+          <span className="text-sm text-white/75">Every task, solved two ways</span>
         </motion.div>
 
         <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-bold mb-8 leading-[0.95] tracking-tight">
-          <span className="block">Building</span>
+          <span className="block">AI</span>
           <span className="block">
-            AI <KineticWord />
+            <KineticWord />
           </span>
           <span className="block text-white/45 text-2xl sm:text-3xl md:text-5xl font-medium tracking-normal mt-4">
-            that save hours, not minutes.
+            You pick. Or mix both.
           </span>
         </h1>
 
@@ -136,7 +136,8 @@ export default function Hero() {
           transition={{ delay: 0.4 }}
           className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-10"
         >
-          I build AI agents, automation workflows, and systems that compound. Documenting the journey on X.
+          Practical guides for everyday tasks — the AI way for speed, the DIY way
+          for craft. New guides weekly, built in public.
         </motion.p>
 
         <motion.div
@@ -145,12 +146,11 @@ export default function Hero() {
           transition={{ delay: 0.55 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
-          <MagneticButton href="https://x.com/aiordiy" external primary>
-            <X className="w-5 h-5" />
-            Follow on X
+          <MagneticButton href="#guides" primary>
+            Explore the guides
             <ArrowRight className="w-4 h-4" />
           </MagneticButton>
-          <MagneticButton href="/projects">View Projects</MagneticButton>
+          <MagneticButton href="/guides">Browse the library</MagneticButton>
         </motion.div>
       </motion.div>
     </section>
