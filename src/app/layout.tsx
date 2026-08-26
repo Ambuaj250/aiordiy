@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Fraunces, Space_Grotesk, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/next";
 
 const display = Fraunces({
   variable: "--font-display",
